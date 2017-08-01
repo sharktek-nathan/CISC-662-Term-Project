@@ -1,0 +1,53 @@
+RewriteEngine On
+
+# ----------------------------------------------------------------------
+# Set Server Environment  
+# ----------------------------------------------------------------------
+
+SetEnv CI_ENV development
+#SetEnv CI_ENV staging
+#SetEnv CI_ENV production
+
+# ----------------------------------------------------------------------
+# Set Version for Caching  
+# ----------------------------------------------------------------------
+SetEnv GS_VS 4.3.4
+
+# ----------------------------------------------------------------------
+# Dynamic Base Path - Staging - staging.example.com/~example
+# ----------------------------------------------------------------------
+
+#RewriteCond %{HTTP_HOST} ^gosigner.dev/app/$
+#RewriteRule . - [E=REWRITEBASE:/test/]
+
+# ----------------------------------------------------------------------
+# Dynamic Base Path - Production - example.com
+# ----------------------------------------------------------------------
+
+#RewriteCond %{HTTP_HOST} ^api.redfax.com/v2/$
+#RewriteRule . - [E=REWRITEBASE:/v2/]
+
+
+#Removes access to the system folder by users.
+#Additionally this will allow you to create a System.php controller,
+#previously this would not have been possible.
+#'system' can be replaced if you have renamed your system folder.
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+#When your application folder isn't in the system folder
+#This snippet prevents user access to the application folder
+#Submitted by: Fabdrol
+#Rename 'application' to your applications folder name.
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+#Checks to 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]  
+
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "accept, cache-control, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+Header append P3P 'CP="CURa ADMa DEVa CONo HISa OUR IND DSP ALL COR"

@@ -1,0 +1,43 @@
+#myScrollspy {
+    top: 4em;
+    position: fixed;
+}
+
+.function {
+    margin-bottom: 12em;
+}
+
+.function .terms li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.function .description {
+    padding: 20px;
+    border: 1px solid #DADADA;
+    color: #1f1d1d;
+    border-left: 4px solid #E13300;
+    border-radius: 5px;
+
+}
+
+.function li .string {
+    color: #00CC00;
+}
+
+.function li .int {
+    color: #2894cc;
+}
+
+
+.function .parameter-table .glyphicon-ok {
+    color: #2b542c;
+}
+
+.file-row {
+    margin: 1em 0 2em 0;
+}
+
+.double-text {
+    line-height: 2em;
+}

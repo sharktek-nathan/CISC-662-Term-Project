@@ -111,11 +111,11 @@
 
                         <div class="row file-row">
                             <div class="col-xs-6">
-                                <h4>Training Data (2000 Lines):</h4>
+                                <h4>Training Data set (2000 Lines):</h4>
                                 <a target="_blank" href="/resources/downloadFile/TrainingSet_Final5000.csv">TrainingSet_Final5000.csv (3.8MB)</a>
                             </div>
                             <div class="col-xs-6">
-                                <h4>Testing Data (1000 Lines):</h4>
+                                <h4>Testing Data set (1000 Lines):</h4>
                                 <a target="_blank" href="/resources/downloadFile/TestSet_both500.txt">TestSet_both500.txt (2.0MB)</a>
                             </div>
                         </div>

@@ -63,6 +63,16 @@
 
     <div class="row" style="margin-top: 2em;">
         <div class="col-xs-12">
+            <h3>Files Used:</h3>
+        </div>
+        <div class="col-xs-12">
+            <p>Training Data set   : <a target="_blank" href="/resources/downloadFile/TrainingSet_Final5000.csv">TrainingSet_Final5000.csv (3.8MB)</a></p>
+            <p>Testing Data set    : <a target="_blank" href="/resources/downloadFile/TestSet_both500.txt">TestSet_both500.txt (2.0MB)</a></p>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em;">
+        <div class="col-xs-12">
             <h3>Other Performance Factors</h3>
         </div>
         <div class="col-xs-12">

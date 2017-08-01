@@ -44,7 +44,12 @@
                 <div class="row" style="margin-top: 2em;">
                     <div class="col-xs-4">
                         <h4>Source Code</h4>
-                        <p>The view the entirety of the project's source code please click "View on GitHub" below:</p>
+                        <p>The view the source code please click "Source Code" below. Relevant function are in
+                         the application/controllers directory.</p>
+
+                        <p>
+                            <a target="_blank" href="https://github.com/sharktek-nathan/CISC-662-Term-Project">View Source Code</a>
+                        </p>
                     </div>
                     <div class="col-xs-4">
                         <h4>Run Classifier</h4>
